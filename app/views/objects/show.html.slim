@@ -18,9 +18,12 @@ div class="max-w-screen-xl mx-auto px-3 md:px-0 lg:flex"
           - elsif @object.module_object?
             span class="py-1 px-3 rounded bg-gray-200 dark:bg-gray-700 text-sm"
               | Module
-      div class="ruby-documentation"
+      div class="ruby-documentation pb-5"
         == @object.description
+      hr
     = render "objects/show/methods",
-        methods: @object.ruby_class_methods, title: "Class Methods"
+      methods: @object.ruby_class_methods, title: "Class Methods" unless @object.ruby_class_methods.empty?
+    div class="my-5"
+      hr
     = render "objects/show/methods",
-        methods: @object.ruby_instance_methods, title: "Instance Methods"
+      methods: @object.ruby_instance_methods, title: "Instance Methods" unless  @object.ruby_instance_methods.empty?
