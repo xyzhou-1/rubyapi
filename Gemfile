@@ -32,6 +32,7 @@ group :preload, :default do
   gem "trenni-sanitize", require: false
   gem "pastel", require: false
   gem "rouge", require: false
+  gem "rbs", require: false
 end
 
 gem "slim"
