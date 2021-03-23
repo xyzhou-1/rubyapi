@@ -21,6 +21,10 @@ class RubyVersion
     @_version.segments[0..1].join(".")
   end
 
+  def has_type_signitures?
+    @version >= '3.0' || dev?
+  end
+
   def prerelease?
     return true if dev?
     @_version.prerelease?
