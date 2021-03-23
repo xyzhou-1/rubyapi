@@ -8,8 +8,10 @@ div class="md:px-3 my-3"
     div class="flex flex-wrap"
       div class="w-full md:w-10/12"
         a href="##{method_anchor(m)}"
-          - m.call_sequence.each do |seq|
-            h4 class="lg:text-2xl text-lg text-gray-900 dark:text-gray-200 font-semibold"= seq
+          h4 class="lg:text-2xl text-lg text-gray-900 dark:text-gray-200 font-semibold"= m.name
+          <br>
+          - m.signitures.each do |sig|
+            h4 class="lg:text-2xl text-lg text-gray-900 dark:text-gray-200 font-semibold"= sig
 
       div class="flex md:justify-end w-full md:w-2/12 mt-3 md:mt-0 font-mono"
         span class="px-2 h-6 inline-block rounded bg-gray-200 dark:bg-gray-700 algin-middle cursor-default" title="#{m.method_type.capitalize} Method"

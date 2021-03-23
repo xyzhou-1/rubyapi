@@ -90,6 +90,10 @@ class RubyMethod
     source_properties[2]
   end
 
+  def signitures
+    body[:signitures]
+  end
+
   def to_hash
     {
       name: name,
@@ -103,7 +107,8 @@ class RubyMethod
       call_sequence: call_sequence,
       alias: method_alias,
       source_body: source_body,
-      metadata: metadata
+      metadata: metadata,
+      signitures: signitures
     }
   end
 
