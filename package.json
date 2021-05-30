@@ -2,8 +2,10 @@
   "name": "ruby-api",
   "private": true,
   "dependencies": {
+    "@babel/preset-react": "^7.13.13",
     "@rails/webpacker": "^5.4.0",
     "autoprefixer": "^9",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "clipboard-copy": "^4.0.1",
     "hotkeys-js": "^3.8.5",
     "lodash.throttle": "^4.1.1",
@@ -12,7 +14,9 @@
     "mustache": "^4.2.0",
     "postcss": "^7",
     "postcss-cssnext": "^3.1.0",
-    "stimulus": "^2.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "tailwindcss": "^2.0.1-compat"
   },
   "devDependencies": {
