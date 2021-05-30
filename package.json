@@ -17,7 +17,9 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "tailwindcss": "^2.0.1-compat"
+    "tailwindcss": "^2.0.1-compat",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
     "chokidar": "^3.5.1",
