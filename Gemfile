@@ -34,6 +34,7 @@ group :preload, :default do
   gem "trenni-sanitize", require: false
   gem "pastel", require: false
   gem "rouge", require: false
+  gem 'mini_racer', platforms: :ruby
 end
 
 gem "slim"
